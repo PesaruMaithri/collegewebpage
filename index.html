@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Engineering College Alumni</title>
+
+    <link rel="stylesheet" href="styles.css">
+        
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+           /*background: linear-gradient(135deg, #2b2b2b, #1e1e1e);*/
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            background-image: url('image.jpg');
+        }
+        header {
+            background: #1e1e1e;
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+            font-family: "Times New Roman", Times, serif;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section {
+            padding: 30px;
+            margin: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            width: 80%;
+            max-width: 1200px;
+            position: relative;
+            top: 60px;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .flex-item {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+            max-width: 300px;
+            background: #2c2c2c;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s forwards;
+        }
+        .flex-item:nth-child(1) { animation-delay: 0s; }
+        .flex-item:nth-child(2) { animation-delay: 0.1s; }
+        .flex-item:nth-child(3) { animation-delay: 0.2s; }
+        .flex-item:nth-child(4) { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #1e1e1e;
+            width: 100%;
+            position: relative;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="navbar">
+         <tr> 
+            <td>
+            <h1>Government Engineering College</h1>
+        </td>
+        <td>
+            <h5><title>register</title></h5>
+        </td>
+        </tr>
+        </div>
+    </header>
+    <br><br><br><br><br><br>
+
+    <!-- 3D Canvas Section (Placeholder for 3D Model) -->
+   <!--<section id="home" class="section">
+        <div class="canvas-container">
+            <canvas id="3d-canvas">Your browser doesn't support WebGL</canvas>
+        </div>
+    </section>
+-->
+<br><br><br><br><br><br><br><br><br><br>
+    <center>
+    <!-- Side-by-Side Sections -->
+    
+    <section class="flex-container">
+        <!-- Networking Hub Section -->
+         <br><br><br><br><br><br><br>
+        <div class="flex-item">
+            <h2>Networking Hub</h2>
+            <p>Connect with peers, find alumni by location, batch, or profession.</p>
+            <button class="button">Connect Now</button>
+        </div>
+
+        <!-- Job Portal Section -->
+        <div class="flex-item">
+            <h2>Job Portal</h2>
+            <p>Explore job opportunities shared by alumni and companies.</p>
+            <button class="button">View Job Listings</button>
+        </div>
+
+        <!-- Alumni Directory Section -->
+        <div class="flex-item">
+            <h2>Alumni Directory</h2>
+            <p>Search for alumni by name, batch, or location.</p>
+            <button class="button">Search Directory</button>
+        </div>
+
+        <!-- Donation Portal Section -->
+        <div class="flex-item">
+            <h2>Donation Portal</h2>
+            <p>Support your college through donations and sponsorships.</p>
+            <button class="button">Donate Now</button>
+        </div>
+    </section>
+
+    </center>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Government Engineering College Alumni Association</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/login.php/" target="_blank">Facebook</a>
+            <a href="https://x.com/i/flow/login" target="_blank">Twitter</a>
+            <a href="https://www.linkedin.com/company/login" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
